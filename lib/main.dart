@@ -2,25 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:whats/screens/calls_screen.dart';
 import 'package:whats/screens/chats_screen.dart';
 import 'package:whats/screens/contacts_screen.dart';
+import 'package:whats/util/custom_colors.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  Color tealDarkGreen = Color(0xff075E54);
-  Color tealLightGreen = Color(0xff128C7E);
-  Color lightGreen = Color(0xff25D366);
-  Color outgoingChatBubble = Color(0xffDCF8C6);
-  Color checkmarkBlue = Color(0xff34B7F1);
-  Color chatBackground = Color(0xffECE5DD);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'WhatsApp',
       theme: ThemeData(
-        primaryColor: tealDarkGreen,
+        primaryColor: CustomColors().tealDarkGreen,
         accentColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -51,7 +45,7 @@ class MyHomePage extends StatelessWidget {
               onPressed: () {},
             ),
           ],
-          bottom: TabBar(tabs: [
+          bottom: TabBar(labelStyle: TextStyle(fontSize: 16), tabs: [
             Tab(
               text: 'CALLS',
             ),
