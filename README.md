@@ -1,4 +1,4 @@
-# whats
+# Whatsapp Interface
 
 This project is only for study purposes.
 
