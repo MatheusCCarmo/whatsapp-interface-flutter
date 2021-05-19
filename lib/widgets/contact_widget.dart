@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:whats/model/user.dart';
 import 'package:whats/util/custom_colors.dart';
 
-class ChatWidget extends StatelessWidget {
+class ContactWidget extends StatelessWidget {
+  User _user;
+  ContactWidget(this._user);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,7 +20,9 @@ class ChatWidget extends StatelessWidget {
                     width: 60,
                     height: 60,
                     child: Image.network(
-                      "https://wp-content.bluebus.com.br/wp-content/uploads/2017/03/31142426/twitter-novo-avatar-padrao-2017-bluebus.png",
+                      _user.imageUrl == null
+                          ? "https://wp-content.bluebus.com.br/wp-content/uploads/2017/03/31142426/twitter-novo-avatar-padrao-2017-bluebus.png"
+                          : _user.imageUrl,
                       fit: BoxFit.cover,
                     ))),
           ),
@@ -36,12 +42,12 @@ class ChatWidget extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          'John of the nike',
+                          _user.name,
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20),
                         ),
                         Text(
-                          '11:48 AM',
+                          _user.platform.toUpperCase(),
                           style: TextStyle(
                               color: CustomColors().lightGreen,
                               fontWeight: FontWeight.bold),
@@ -51,29 +57,11 @@ class ChatWidget extends StatelessWidget {
                     SizedBox(
                       height: 2,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Text('Sabe onde eu to, mano?',
-                            style: TextStyle(
-                              color: Colors.grey[700],
-                              fontSize: 18,
-                            )),
-                        Container(
-                          margin: EdgeInsets.only(right: 6),
-                          child: CircleAvatar(
-                            child: Text(
-                              '2',
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
-                            radius: 12,
-                            backgroundColor: CustomColors().lightGreen,
-                          ),
-                        ),
-                      ],
-                    ),
+                    Text(_user.description,
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 18,
+                        )),
                     SizedBox(
                       height: 9,
                     ),
