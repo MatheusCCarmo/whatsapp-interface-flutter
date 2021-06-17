@@ -4,12 +4,12 @@ class User {
   String name;
   String description;
   String platform;
-  String imageUrl;
+  String imageSrc;
 
   User({
     @required this.name,
     @required this.description,
     this.platform,
-    this.imageUrl,
+    this.imageSrc,
   });
 }

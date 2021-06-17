@@ -19,10 +19,10 @@ class ContactWidget extends StatelessWidget {
                 child: SizedBox(
                     width: 60,
                     height: 60,
-                    child: Image.network(
-                      _user.imageUrl == null
-                          ? "https://wp-content.bluebus.com.br/wp-content/uploads/2017/03/31142426/twitter-novo-avatar-padrao-2017-bluebus.png"
-                          : _user.imageUrl,
+                    child: Image.asset(
+                      _user.imageSrc == null
+                          ? 'assets/images/avatar.png'
+                          : _user.imageSrc,
                       fit: BoxFit.cover,
                     ))),
           ),

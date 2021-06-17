@@ -12,13 +12,15 @@ class ChatWidget extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(bottom: 10, left: 10, right: 10),
             child: ClipOval(
-                child: SizedBox(
-                    width: 60,
-                    height: 60,
-                    child: Image.network(
-                      "https://wp-content.bluebus.com.br/wp-content/uploads/2017/03/31142426/twitter-novo-avatar-padrao-2017-bluebus.png",
-                      fit: BoxFit.cover,
-                    ))),
+              child: SizedBox(
+                width: 60,
+                height: 60,
+                child: Image.asset(
+                  'assets/images/avatar.png',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
           ),
           Expanded(
             child: Container(
@@ -36,7 +38,7 @@ class ChatWidget extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          'John of the nike',
+                          'John Doe',
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20),
                         ),
@@ -54,7 +56,7 @@ class ChatWidget extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Text('Sabe onde eu to, mano?',
+                        Text('Lorem Ipsum',
                             style: TextStyle(
                               color: Colors.grey[700],
                               fontSize: 18,
