@@ -1,16 +1,14 @@
-# Whatsapp Interface
+# Whatsapp Interface with Flutter
 
 This project is only for study purposes.
 
-## Getting Started
+# Screenshots
 
-This project is a starting point for a Flutter application.
+### Chats Screen
+<img src="https://user-images.githubusercontent.com/43590889/122564754-1a124a00-d01c-11eb-837a-e7bbefde497b.png" width="400" height="711">
 
-A few resources to get you started if this is your first Flutter project:
+### Contacs Screen
+<img src="https://user-images.githubusercontent.com/43590889/122564768-1da5d100-d01c-11eb-88fb-446c5abde1bd.png" width="400" height="711">
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
