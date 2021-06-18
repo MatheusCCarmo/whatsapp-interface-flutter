@@ -2,7 +2,7 @@
 
 This project is only for study purposes.
 
-# Screenshots
+## Screenshots
 
 ### Chats Screen
 <img src="https://user-images.githubusercontent.com/43590889/122564754-1a124a00-d01c-11eb-837a-e7bbefde497b.png" width="400" height="711">
